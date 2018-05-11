@@ -33,7 +33,7 @@ public class EOficina extends Empleado{
 
     @Override
     public String toString() {
-        return "EOficina{" + super.toString() + "tecladoMecanico=" + tecladoMecanico + '}';
+        return "EOficina{" + super.toString() + " tecladoMecanico=" + tecladoMecanico + '}';
     }
     
     
