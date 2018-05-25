@@ -23,6 +23,12 @@ public class Descuento {
         importe = 0;
     }
 
+    /**
+     * 
+     * @param codigo
+     * @param fechaValidez
+     * @param importe 
+     */
     public Descuento(String codigo, Date fechaValidez, double importe) {
         this.codigo = codigo;
         this.fechaValidez = fechaValidez;

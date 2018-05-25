@@ -18,6 +18,16 @@ public class EOficina extends Empleado{
         tecladoMecanico = false;
     }
     
+    /**
+     * 
+     * @param id
+     * @param nombre
+     * @param apellidos
+     * @param NIF
+     * @param telefono
+     * @param direccion
+     * @param tecladoMecanico 
+     */
     public EOficina(int id, String nombre, String apellidos, String NIF, String telefono, String direccion, boolean tecladoMecanico){
         super(id, nombre, apellidos, NIF, telefono, direccion);
         this.tecladoMecanico = tecladoMecanico;

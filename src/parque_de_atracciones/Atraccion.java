@@ -29,6 +29,13 @@ public class Atraccion {
         reparaciones = new ArrayList();
     }
 
+    /**
+     * 
+     * @param id
+     * @param nombre
+     * @param estado
+     * @param accesible 
+     */
     public Atraccion(int id, String nombre, String estado, boolean accesible) {
         this.id = id;
         this.nombre = nombre;

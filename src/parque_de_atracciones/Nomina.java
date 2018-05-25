@@ -6,28 +6,39 @@
 package parque_de_atracciones;
 
 /**
- *
+ * 
  * @author cayetano
  */
 public class Nomina {
-    
+
     private int id;
     private int mes;
     private int año;
     private double salario;
+    private EOficina admin;
 
     public Nomina(){
         id = 0;
         mes = 0;
         año = 0;
         salario = 0;
+        admin = new EOficina();
     }
     
-    public Nomina(int id, int mes, int año, double salario) {
+    /**
+     * 
+     * @param id
+     * @param mes
+     * @param año
+     * @param salario
+     * @param admin 
+     */
+    public Nomina(int id, int mes, int año, double salario, EOficina admin) {
         this.id = id;
         this.mes = mes;
         this.año = año;
         this.salario = salario;
+        this.admin = admin;
     }
 
     public int getId() {
@@ -62,10 +73,16 @@ public class Nomina {
         this.salario = salario;
     }
 
+    public EOficina getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(EOficina admin) {
+        this.admin = admin;
+    }
+
     @Override
     public String toString() {
-        return "Nomina{" + "id=" + id + ", mes=" + mes + ", a\u00f1o=" + año + ", salario=" + salario + '}';
+        return "Nomina{" + "id=" + id + ", mes=" + mes + ", a\u00f1o=" + año + ", salario=" + salario + ", admin=" + admin + '}';
     }
-    
-    
 }

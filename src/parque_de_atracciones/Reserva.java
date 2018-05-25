@@ -27,6 +27,13 @@ public class Reserva {
         comprador = new Visitante();
     }
 
+    /**
+     * 
+     * @param id
+     * @param fechaReserva
+     * @param fechaValidez
+     * @param comprador 
+     */
     public Reserva(int id, Date fechaReserva, Date fechaValidez, Visitante comprador) {
         this.id = id;
         this.fechaReserva = fechaReserva;

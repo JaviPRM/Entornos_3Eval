@@ -18,6 +18,16 @@ public class EAtracciones extends Empleado{
         herramientasBuenEstado = true;
     }
 
+    /**
+     * 
+     * @param id
+     * @param nombre
+     * @param apellidos
+     * @param NIF
+     * @param telefono
+     * @param direccion
+     * @param herramientasBuenEstado 
+     */
     public EAtracciones(int id, String nombre, String apellidos, String NIF, String telefono, String direccion, boolean herramientasBuenEstado) {
         super(id, nombre, apellidos, NIF, telefono, direccion);
         this.herramientasBuenEstado = herramientasBuenEstado;

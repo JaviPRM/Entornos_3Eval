@@ -23,6 +23,13 @@ public class Visitante {
         email = new String(); 
     }
 
+    /**
+     * 
+     * @param id
+     * @param nombre
+     * @param apellidos
+     * @param email 
+     */
     public Visitante(int id, String nombre, String apellidos, String email) {
         this.id = id;
         this.nombre = nombre;

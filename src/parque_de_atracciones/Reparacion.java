@@ -24,12 +24,13 @@ public class Reparacion {
         numeroDias = 0;
         mecanicos = new ArrayList();
     }
+    
     /**
-    * 
-    * @param id
-    * @param descripcion
-    * @param numeroDias 
-    */
+     * 
+     * @param id
+     * @param descripcion
+     * @param numeroDias 
+     */
     public Reparacion(int id, String descripcion, int numeroDias) {
         this.id = id;
         this.descripcion = descripcion;

@@ -18,6 +18,16 @@ public class ETaller extends Empleado{
         numHerramientas = 0;
     }
     
+    /**
+     * 
+     * @param id
+     * @param nombre
+     * @param apellidos
+     * @param NIF
+     * @param telefono
+     * @param direccion
+     * @param numHerramientas 
+     */
     public ETaller(int id, String nombre, String apellidos, String NIF, String telefono, String direccion, int numHerramientas){
         super(id, nombre, apellidos, NIF, telefono, direccion);
         this.numHerramientas = numHerramientas;

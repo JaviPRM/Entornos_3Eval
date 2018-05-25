@@ -5,6 +5,8 @@
  */
 package parque_de_atracciones;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author cayetano
@@ -17,6 +19,7 @@ public class Empleado {
     protected String NIF;
     protected String telefono;
     protected String direccion;
+    protected ArrayList<Nomina> nominas;
     
     public Empleado(){
         id = 0;
@@ -25,8 +28,18 @@ public class Empleado {
         NIF = new String();
         telefono = new String();
         direccion = new String();
+        nominas = new ArrayList();
     }
     
+    /**
+     * 
+     * @param id
+     * @param nombre
+     * @param apellidos
+     * @param NIF
+     * @param telefono
+     * @param direccion 
+     */
     public Empleado(int id, String nombre, String apellidos, String NIF, String telefono, String direccion){
         this.id = id;
         this.nombre = nombre;
@@ -34,6 +47,7 @@ public class Empleado {
         this.NIF = NIF;
         this.telefono = telefono;
         this.direccion = direccion;
+        nominas = new ArrayList();
     }
 
     public int getId() {
@@ -84,10 +98,16 @@ public class Empleado {
         this.direccion = direccion;
     }
 
+    public ArrayList<Nomina> getNominas() {
+        return nominas;
+    }
+
+    public void setNominas(ArrayList<Nomina> nominas) {
+        this.nominas = nominas;
+    }
+
     @Override
     public String toString() {
-        return "Empleado{" + "id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", NIF=" + NIF + ", telefono=" + telefono + ", direccion=" + direccion + '}';
-    }
-    
-    
+        return "Empleado{" + "id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", NIF=" + NIF + ", telefono=" + telefono + ", direccion=" + direccion + ", nominas=" + nominas + '}';
+    } 
 }
