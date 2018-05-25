@@ -23,7 +23,14 @@ public class Entrada {
         precio = 0;
     }
 
-    public Entrada(int id, Date fechaHora, double precio) {
+    /**
+     *
+     * @param id
+     * @param fechaHora
+     * @param precio
+     * @param desc
+     */
+    public Entrada(int id, Date fechaHora, double precio, Descuento desc) {
         this.id = id;
         this.fechaHora = fechaHora;
         this.precio = precio;
@@ -52,11 +59,14 @@ public class Entrada {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+    
+    public void aplicarDescuento(Descuento desc){
+        this.precio = precio-desc.getImporte();
+        System.out.println("El descuento ha sido aplicado. El precio de su entrada es ahora de " + precio + "€");
+    }
 
     @Override
     public String toString() {
         return "Entrada{" + "id=" + id + ", fechaHora=" + fechaHora + ", precio=" + precio + '}';
     }
-    
-    
 }

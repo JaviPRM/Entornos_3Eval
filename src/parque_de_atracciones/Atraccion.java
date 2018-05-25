@@ -5,6 +5,8 @@
  */
 package parque_de_atracciones;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author cayetano
@@ -15,12 +17,16 @@ public class Atraccion {
     private String nombre;
     private String estado;
     private boolean accesible;
+    private ArrayList<Empleado> empleados;
+    private ArrayList<Reparacion> reparaciones;
     
     public Atraccion(){
         id = 0;
         nombre = new String();
         estado = new String();
         accesible = false;
+        empleados = new ArrayList();
+        reparaciones = new ArrayList();
     }
 
     public Atraccion(int id, String nombre, String estado, boolean accesible) {
@@ -28,6 +34,8 @@ public class Atraccion {
         this.nombre = nombre;
         this.estado = estado;
         this.accesible = accesible;
+        empleados = new ArrayList();
+        reparaciones = new ArrayList();
     }
 
     public int getId() {
@@ -62,9 +70,25 @@ public class Atraccion {
         this.accesible = accesible;
     }
 
+    public ArrayList<Empleado> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(ArrayList<Empleado> empleados) {
+        this.empleados = empleados;
+    }
+
+    public ArrayList<Reparacion> getReparaciones() {
+        return reparaciones;
+    }
+
+    public void setReparaciones(ArrayList<Reparacion> reparaciones) {
+        this.reparaciones = reparaciones;
+    }
+
     @Override
     public String toString() {
-        return "Atraccion{" + "id=" + id + ", nombre=" + nombre + ", estado=" + estado + ", accesible=" + accesible + '}';
+        return "Atraccion{" + "id=" + id + ", nombre=" + nombre + ", estado=" + estado + ", accesible=" + accesible + ", empleados=" + empleados + ", reparaciones=" + reparaciones + '}';
     }
     
 }

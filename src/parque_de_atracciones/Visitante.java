@@ -20,7 +20,7 @@ public class Visitante {
         id = 0;
         nombre = new String();
         apellidos = new String();
-        email = new String();
+        email = new String(); 
     }
 
     public Visitante(int id, String nombre, String apellidos, String email) {

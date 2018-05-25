@@ -16,17 +16,23 @@ public class Reserva {
     private int id;
     private Date fechaReserva;
     private Date fechaValidez;
+    private Entrada[] tickets;
+    private Visitante comprador;
     
     public Reserva(){
         id = 0;
         fechaReserva = new Date();
         fechaValidez = new Date();
+        tickets = new Entrada[5];
+        comprador = new Visitante();
     }
 
-    public Reserva(int id, Date fechaReserva, Date fechaValidez) {
+    public Reserva(int id, Date fechaReserva, Date fechaValidez, Visitante comprador) {
         this.id = id;
         this.fechaReserva = fechaReserva;
         this.fechaValidez = fechaValidez;
+        tickets = new Entrada[5];
+        this.comprador = comprador;
     }
 
     public int getId() {
@@ -53,9 +59,24 @@ public class Reserva {
         this.fechaValidez = fechaValidez;
     }
 
+    public Entrada[] getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(Entrada[] tickets) {
+        this.tickets = tickets;
+    }
+
+    public Visitante getComprador() {
+        return comprador;
+    }
+
+    public void setComprador(Visitante comprador) {
+        this.comprador = comprador;
+    }
+
     @Override
     public String toString() {
-        return "Reserva{" + "id=" + id + ", fechaReserva=" + fechaReserva + ", fechaValidez=" + fechaValidez + '}';
+        return "Reserva{" + "id=" + id + ", fechaReserva=" + fechaReserva + ", fechaValidez=" + fechaValidez + ", tickets=" + tickets + ", comprador=" + comprador + '}';
     }
-    
 }
