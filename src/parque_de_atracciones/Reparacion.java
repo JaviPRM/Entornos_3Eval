@@ -69,6 +69,10 @@ public class Reparacion {
     public void setMecanicos(ArrayList<ETaller> mecanicos) {
         this.mecanicos = mecanicos;
     }
+    
+    public void añadirMecanico(ETaller e){
+        mecanicos.add(e);
+    }
 
     @Override
     public String toString() {

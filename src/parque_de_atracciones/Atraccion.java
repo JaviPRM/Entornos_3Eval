@@ -92,6 +92,14 @@ public class Atraccion {
     public void setReparaciones(ArrayList<Reparacion> reparaciones) {
         this.reparaciones = reparaciones;
     }
+    
+    public void añadirEmpleado(Empleado e){
+        empleados.add(e);
+    }
+    
+    public void añadirReparacion(Reparacion r){
+        reparaciones.add(r);
+    }
 
     @Override
     public String toString() {

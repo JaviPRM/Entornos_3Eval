@@ -81,7 +81,13 @@ public class Reserva {
     public void setComprador(Visitante comprador) {
         this.comprador = comprador;
     }
-
+    
+    public void creaReserva(int numEntradas){
+        for(int i=0;i<numEntradas;i++){
+            
+        }
+    }
+    
     @Override
     public String toString() {
         return "Reserva{" + "id=" + id + ", fechaReserva=" + fechaReserva + ", fechaValidez=" + fechaValidez + ", tickets=" + tickets + ", comprador=" + comprador + '}';

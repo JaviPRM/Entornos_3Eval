@@ -45,8 +45,4 @@ public class ETaquilla extends Empleado{
     public String toString() {
         return "ETaquilla{" + super.toString() + " entradasVendidas=" + entradasVendidas + '}';
     }
-    
-    
-    
-    
 }

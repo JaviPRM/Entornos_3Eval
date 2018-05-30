@@ -72,7 +72,10 @@ public class Entrada {
         this.atrac = atrac;
     }
     
-    
+    /**
+     * 
+     * @param desc 
+     */
     public void aplicarDescuento(Descuento desc){
         this.precio = precio-desc.getImporte();
         System.out.println("El descuento ha sido aplicado. El precio de su entrada es ahora de " + precio + "€");

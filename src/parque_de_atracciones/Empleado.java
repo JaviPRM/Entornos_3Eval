@@ -41,7 +41,7 @@ public class Empleado {
      * @param direccion 
      */
     public Empleado(int id, String nombre, String apellidos, String NIF, String telefono, String direccion){
-        this.id = id;
+        if (id <0 ) throw new EmpleadoException(); else this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.NIF = NIF;
@@ -104,6 +104,10 @@ public class Empleado {
 
     public void setNominas(ArrayList<Nomina> nominas) {
         this.nominas = nominas;
+    }
+    
+    public void addNomina(Nomina n){
+        nominas.add(n);
     }
 
     @Override

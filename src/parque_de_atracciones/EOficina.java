@@ -45,6 +45,4 @@ public class EOficina extends Empleado{
     public String toString() {
         return "EOficina{" + super.toString() + " tecladoMecanico=" + tecladoMecanico + '}';
     }
-    
-    
 }
