@@ -31,10 +31,10 @@ public class Reparacion {
      * @param descripcion
      * @param numeroDias 
      */
-    public Reparacion(int id, String descripcion, int numeroDias) {
-        this.id = id;
-        this.descripcion = descripcion;
-        this.numeroDias = numeroDias;
+    public Reparacion(int id, String descripcion, int numeroDias)throws ReparacionException  {
+       if(id<0)throw new ReparacionException(); this.id = id;
+       if(descripcion.length()>300||descripcion.length()<10) throw  new ReparacionException(); this.descripcion = descripcion;
+       if(numeroDias<0) throw new ReparacionException(); else this.numeroDias = numeroDias;
         mecanicos = new ArrayList();
     }
 
